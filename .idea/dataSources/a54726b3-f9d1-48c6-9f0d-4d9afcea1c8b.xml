@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="user@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.3">
+    <root id="1"/>
+    <schema id="2" parent="1" name="bbs"/>
+    <schema id="3" parent="1" name="card"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="message"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="shopcart"/>
+    <schema id="8" parent="1" name="smh"/>
+    <schema id="9" parent="1" name="station"/>
+    <schema id="10" parent="1" name="test"/>
+    <schema id="11" parent="1" name="user">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="12" parent="1" name="voca"/>
+    <table id="13" parent="11" name="bbsuser"/>
+    <table id="14" parent="11" name="user"/>
+    <table id="15" parent="11" name="user1"/>
+    <routine id="16" parent="11" name="p4">
+      <RoutineKind>procedure</RoutineKind>
+    </routine>
+    <column id="17" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="13" name="username">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12</DataType>
+    </column>
+    <column id="19" parent="13" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(20)|12</DataType>
+    </column>
+    <key id="20" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="14" name="username">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="22" parent="14" name="password">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="23" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="15" name="username">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <column id="25" parent="15" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12</DataType>
+    </column>
+    <key id="26" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <argument id="27" parent="16" name="in_username">
+      <Position>1</Position>
+      <DataType>CHAR(10)|1</DataType>
+    </argument>
+    <argument id="28" parent="16" name="out_num1">
+      <Position>2</Position>
+      <DataType>INT(10)|4</DataType>
+    </argument>
+    <argument id="29" parent="16" name="out_num2">
+      <Position>3</Position>
+      <DataType>INT(10)|4</DataType>
+    </argument>
+  </database-model>
+</dataSource>
